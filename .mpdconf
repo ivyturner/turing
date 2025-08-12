@@ -11,15 +11,15 @@
 # file:// protocol) or streaming files over an accepted protocol.
 #
 #music_directory		"$XDG_MUSIC_DIR"
-#music_directory		"~/music"
+music_directory		"~/Music/Library"
 #
 # This setting sets the MPD internal playlist directory. The purpose of this
 # directory is storage for playlists created by MPD. The server will use
 # playlist files not created by the server but only if they are in the MPD
 # format. This setting defaults to playlist saving being disabled.
 #
-#playlist_directory		"$XDG_CONFIG_HOME/mpd/playlists"
-#playlist_directory		"~/.mpd/playlists"
+#playlist_directory		"$XDG_Music/Library_HOME/mpd/playlists"
+playlist_directory		"~/.mpd/playlists"
 #
 # This setting sets the location of the MPD database. This file is used to
 # load the database at server start up and store the database while the
@@ -28,7 +28,7 @@
 # files over an accepted protocol.
 #
 #db_file			"$XDG_CACHE_HOME/mpd/database"
-#db_file			"~/.mpd/database"
+db_file			"~/.mpd/database"
 
 # These settings are the locations for the daemon log files for the daemon.
 #
@@ -39,7 +39,7 @@
 # defaults to the systemd journal, which is fine.
 #
 #log_file			"$XDG_CACHE_HOME/mpd/log"
-#log_file			"~/.mpd/log"
+log_file			"~/.mpd/log"
 
 # This setting sets the location of the file which stores the process ID
 # for use of mpd --kill and some init scripts. This setting is disabled by
@@ -98,7 +98,7 @@
 # This setting is the TCP port that is desired for the daemon to get assigned
 # to.
 #
-#port				"6600"
+port				"6600"
 #
 # Suppress all messages below the given threshold.  Use "verbose" for
 # troubleshooting. Available setting arguments are "notice", "info", "verbose",
